@@ -1,0 +1,26 @@
+<svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ligne de base -->
+  <line x1="10" y1="50" x2="110" y2="50" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Graphique décroissant (sans Adzly) -->
+  <path d="M10,20 L30,25 L50,30 L70,40 L90,45 L110,50" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Points de données -->
+  <circle cx="10" cy="20" r="3" fill="#EF4444"/>
+  <circle cx="30" cy="25" r="3" fill="#EF4444"/>
+  <circle cx="50" cy="30" r="3" fill="#EF4444"/>
+  <circle cx="70" cy="40" r="3" fill="#EF4444"/>
+  <circle cx="90" cy="45" r="3" fill="#EF4444"/>
+  <circle cx="110" cy="50" r="3" fill="#EF4444"/>
+  
+  <!-- Dégradé sous la courbe -->
+  <path d="M10,20 L30,25 L50,30 L70,40 L90,45 L110,50 L110,50 L10,50 Z" fill="url(#paint0_linear)" fill-opacity="0.2"/>
+  
+  <!-- Définition du dégradé -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="60" y1="20" x2="60" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EF4444"/>
+      <stop offset="1" stop-color="#EF4444" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

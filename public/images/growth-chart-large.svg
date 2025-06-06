@@ -1,0 +1,29 @@
+<svg width="180" height="100" viewBox="0 0 180 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ligne de base -->
+  <line x1="10" y1="80" x2="170" y2="80" stroke="#E5E7EB" stroke-width="3"/>
+  
+  <!-- Graphique croissant (avec Adzly) -->
+  <path d="M10,80 L40,70 L70,55 L100,35 L130,20 L170,10" stroke="#2563EB" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Points de données -->
+  <circle cx="10" cy="80" r="5" fill="#2563EB"/>
+  <circle cx="40" cy="70" r="5" fill="#2563EB"/>
+  <circle cx="70" cy="55" r="5" fill="#2563EB"/>
+  <circle cx="100" cy="35" r="5" fill="#2563EB"/>
+  <circle cx="130" cy="20" r="5" fill="#2563EB"/>
+  <circle cx="170" cy="10" r="5" fill="#2563EB"/>
+  
+  <!-- Dégradé sous la courbe -->
+  <path d="M10,80 L40,70 L70,55 L100,35 L130,20 L170,10 L170,80 L10,80" fill="url(#paint0_linear)" fill-opacity="0.2"/>
+  
+  <!-- Définition du dégradé -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="90" y1="10" x2="90" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Étiquettes -->
+  <text x="90" y="95" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563EB">+149% de ROI</text>
+</svg>
