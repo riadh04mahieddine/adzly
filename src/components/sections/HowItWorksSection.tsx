@@ -13,25 +13,25 @@ const HowItWorksSection = () => {
     {
       id: 1,
       title: 'Analyse',
-      description: 'Nous comprenons votre secteur d\'activité, vos produits et vos objectifs business pour créer une stratégie sur mesure.',
+      description: 'Nous comprenons votre secteur d\'activité, vos produits et les tendances actuelles de votre marché pour créer une stratégie sur mesure.',
       icon: MagnifyingGlassIcon,
     },
     {
       id: 2,
-      title: 'Stratégie',
-      description: 'Nous élaborons une stratégie publicitaire adaptée à votre marché et à votre audience cible.',
+      title: 'Stratégie 360°',
+      description: 'Nous élaborons un plan complet combinant contenu organique, micro-influenceurs et publicité payante adapté à votre audience.',
       icon: MapIcon,
     },
     {
       id: 3,
-      title: 'Configuration',
-      description: 'Nous configurons vos campagnes sur les plateformes les plus pertinentes pour votre business.',
+      title: 'Déploiement',
+      description: 'Nous configurons vos canaux organiques et payants pour maximiser votre visibilité et votre impact sur tous les fronts.',
       icon: CogIcon,
     },
     {
       id: 4,
       title: 'Optimisation',
-      description: 'Nous analysons et améliorons continuellement vos performances pour maximiser votre retour sur investissement.',
+      description: 'Nous analysons et améliorons continuellement votre contenu et vos campagnes pour maximiser votre croissance globale.',
       icon: ChartBarSquareIcon,
     }
   ];

@@ -11,29 +11,29 @@ const FeaturesSection = () => {
   const features = [
     {
       id: 1,
-      title: 'Création simplifiée',
-      description: 'Créez des campagnes publicitaires performantes en quelques clics grâce à notre assistant IA intuitif.',
+      title: 'Stratégie complète',
+      description: 'Développez une stratégie 360° incluant publicité payante, contenu organique et micro-influenceurs grâce à notre assistant IA.',
       icon: SparklesIcon,
       color: 'from-blue-500 to-blue-600'
     },
     {
       id: 2,
-      title: 'Optimisation automatique',
-      description: 'Nos algorithmes d\'IA analysent et optimisent vos campagnes en temps réel pour maximiser votre ROI.',
+      title: 'Intelligence des tendances',
+      description: 'Notre IA analyse les tendances actuelles pour vous aider à créer du contenu viral et des campagnes qui captent l\'attention.',
       icon: CogIcon,
       color: 'from-purple-500 to-purple-600'
     },
     {
       id: 3,
       title: 'Analyse unifiée',
-      description: 'Visualisez les performances de toutes vos campagnes sur différentes plateformes dans un tableau de bord centralisé.',
+      description: 'Visualisez les performances de tous vos canaux marketing (payants et organiques) dans un tableau de bord centralisé.',
       icon: ChartBarIcon,
       color: 'from-indigo-500 to-indigo-600'
     },
     {
       id: 4,
       title: 'Économie de temps',
-      description: 'Automatisez les tâches répétitives et concentrez-vous sur votre stratégie globale plutôt que sur l\'exécution.',
+      description: 'Automatisez la gestion de tous vos leviers de croissance et concentrez-vous sur votre vision stratégique globale.',
       icon: ClockIcon,
       color: 'from-blue-600 to-violet-600'
     }

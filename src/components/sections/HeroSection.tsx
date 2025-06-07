@@ -69,12 +69,12 @@ const HeroSection = () => {
                 color: 'transparent'
               }}
             >
-              Des campagnes qui convertissent
+              Votre stratégie de croissance digitale à l'ère de l'IA
             </span>
           </h1>
           
           <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
-            Contrairement aux autres solutions, Adzly inclut tout ce dont vous avez besoin dans un seul package: création, optimisation et analyse de vos campagnes publicitaires.
+            Contrairement aux autres solutions, Adzly orchestre tous vos leviers de croissance en un seul plan : publicité, contenu viral, micro-influenceurs et analyse de tendances.
           </p>
           
           {/* CTA Button */}

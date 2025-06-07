@@ -16,6 +16,8 @@ const PricingSection = () => {
       features: [
         'Jusqu\'à 5 campagnes actives',
         'Accès à 3 plateformes publicitaires',
+        'Suggestions de contenu organique',
+        'Analyse de tendances basique',
         'Rapports de performance hebdomadaires',
         'Assistance par email',
         'Optimisation automatique basique'
@@ -32,6 +34,9 @@ const PricingSection = () => {
       features: [
         'Jusqu\'à 20 campagnes actives',
         'Accès à toutes les plateformes publicitaires',
+        'Stratégie de contenu avancée',
+        'Analyse de tendances approfondie',
+        'Suggestions de micro-influenceurs',
         'Rapports de performance quotidiens',
         'Assistance prioritaire 24/7',
         'Optimisation automatique avancée',
@@ -69,7 +74,7 @@ const PricingSection = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choisissez le plan qui correspond à vos besoins et commencez à optimiser vos campagnes publicitaires dès aujourd'hui.
+            Choisissez le plan qui correspond à vos besoins et commencez à développer votre stratégie de croissance digitale complète dès aujourd'hui.
           </p>
         </div>
 
