@@ -8,28 +8,28 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "Comment Adzly peut-il améliorer mes campagnes publicitaires ?",
-      answer: "Adzly analyse votre secteur d'activité, votre audience cible et vos objectifs pour créer des campagnes optimisées sur les plateformes les plus pertinentes. Notre technologie d'IA ajuste continuellement vos campagnes pour maximiser votre ROI et réduire le coût par acquisition."
+      question: "Comment l'IA d'Adzly améliore-t-elle ma stratégie marketing ?",
+      answer: "Notre intelligence artificielle analyse votre secteur d'activité, votre audience cible et les tendances actuelles pour créer une stratégie marketing personnalisée. Elle optimise continuellement vos campagnes sur toutes les plateformes pour maximiser votre ROI et détecte automatiquement les opportunités de croissance."
     },
     {
-      question: "Combien de temps faut-il pour voir des résultats ?",
-      answer: "La plupart de nos clients constatent une amélioration de leurs performances publicitaires dès les 2 premières semaines. Pour des résultats optimaux, nous recommandons une période d'au moins 1 mois pour permettre à nos algorithmes d'apprentissage d'optimiser pleinement vos campagnes."
+      question: "Comment fonctionne la création de contenu UGC avec Adzly ?",
+      answer: "Nous sélectionnons des créateurs de contenu spécifiquement adaptés à votre marque et votre secteur. Ces créateurs produisent des vidéos authentiques et engageantes qui convertissent mieux que les publicités traditionnelles. Tout le processus est géré par notre équipe, de la sélection des créateurs à la production finale."
     },
     {
       question: "Dois-je avoir des connaissances en marketing digital pour utiliser Adzly ?",
-      answer: "Non, Adzly est conçu pour être accessible à tous, même sans expertise en marketing digital. Notre interface intuitive et notre approche consultative vous guident à chaque étape. Nous nous occupons des aspects techniques pendant que vous vous concentrez sur votre business."
+      answer: "Non, Adzly est conçu pour être accessible à tous, même sans expertise en marketing digital. Notre équipe et notre IA s'occupent de tous les aspects techniques pendant que vous vous concentrez sur votre business. Nous vous fournissons des rapports clairs et des recommandations actionables."
     },
     {
-      question: "Quelles plateformes publicitaires sont prises en charge ?",
-      answer: "Adzly prend en charge les principales plateformes publicitaires dont Google Ads, Facebook/Instagram Ads, LinkedIn Ads, Pinterest Ads et Snapchat Ads. Nous ajoutons régulièrement de nouvelles plateformes pour vous offrir une couverture maximale."
+      question: "Quelles plateformes sont couvertes par Adzly ?",
+      answer: "Adzly couvre toutes les principales plateformes : Facebook, Instagram, TikTok, LinkedIn, Pinterest, YouTube, Google Ads et plus encore. Notre approche multi-plateforme vous permet d'atteindre votre audience idéale où qu'elle se trouve, avec une stratégie cohérente et optimisée."
     },
     {
-      question: "Puis-je annuler mon abonnement à tout moment ?",
-      answer: "Oui, vous pouvez annuler votre abonnement à tout moment sans frais supplémentaires. Nous proposons également une garantie satisfait ou remboursé de 14 jours pour vous permettre d'essayer Adzly sans risque."
+      question: "Combien de temps faut-il pour voir des résultats ?",
+      answer: "La plupart de nos clients constatent une amélioration significative dès le premier mois. Notre contenu UGC commence à générer des résultats immédiatement, tandis que notre IA optimise continuellement vos campagnes pour des performances croissantes au fil du temps."
     },
     {
-      question: "Comment fonctionne le support client ?",
-      answer: "Tous nos clients bénéficient d'un support par email avec un temps de réponse moyen de 24h. Les clients du plan Croissance ont accès à un support prioritaire 24/7 par chat et appel vidéo pour une assistance immédiate."
+      question: "Comment débuter avec Adzly ?",
+      answer: "Il suffit de demander une démo gratuite sur notre site. Nous réaliserons un audit complet de votre stratégie marketing actuelle et vous proposerons un plan personnalisé. Notre équipe vous accompagnera ensuite à chaque étape de la mise en place de votre nouvelle stratégie."
     }
   ];
 
@@ -45,7 +45,7 @@ const FAQSection = () => {
             <span className="text-black">Questions </span>
             <span 
               style={{
-                background: 'linear-gradient(to right, #2563EB, #8B5CF6)',
+                background: 'linear-gradient(to right, #1D9D73, #34D399)',
                 WebkitBackgroundClip: 'text',
                 backgroundClip: 'text',
                 color: 'transparent'
@@ -55,7 +55,7 @@ const FAQSection = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Tout ce que vous devez savoir sur Adzly et comment nous pouvons vous aider à optimiser vos campagnes publicitaires.
+            Tout ce que vous devez savoir sur Adzly et comment notre IA et notre contenu UGC peuvent transformer votre stratégie marketing.
           </p>
         </div>
 
@@ -63,7 +63,7 @@ const FAQSection = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className={`bg-white rounded-xl shadow-sm border ${openIndex === index ? 'border-blue-200' : 'border-gray-100'} overflow-hidden transition-all duration-200`}
+              className={`bg-white rounded-xl shadow-sm border ${openIndex === index ? 'border-[#1D9D73]/30' : 'border-gray-100'} overflow-hidden transition-all duration-200`}
             >
               <button
                 className="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
@@ -71,7 +71,7 @@ const FAQSection = () => {
               >
                 <span className="font-medium text-lg text-gray-900">{faq.question}</span>
                 <ChevronDownIcon 
-                  className={`h-5 w-5 text-blue-500 transition-transform duration-300 ${openIndex === index ? 'transform rotate-180' : ''}`} 
+                  className={`h-5 w-5 text-[#1D9D73] transition-transform duration-300 ${openIndex === index ? 'transform rotate-180' : ''}`} 
                 />
               </button>
               <div 

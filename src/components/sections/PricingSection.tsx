@@ -64,7 +64,7 @@ const PricingSection = () => {
             <span className="text-black">Tarifs </span>
             <span 
               style={{
-                background: 'linear-gradient(to right, #2563EB, #8B5CF6)',
+                background: 'linear-gradient(to right, #1D9D73, #34D399)',
                 WebkitBackgroundClip: 'text',
                 backgroundClip: 'text',
                 color: 'transparent'
@@ -74,7 +74,7 @@ const PricingSection = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choisissez le plan qui correspond à vos besoins et commencez à développer votre stratégie de croissance digitale complète dès aujourd'hui.
+            Choisissez le plan qui correspond à vos besoins et commencez à transformer votre stratégie marketing avec notre IA et notre contenu UGC.
           </p>
         </div>
 
@@ -82,17 +82,17 @@ const PricingSection = () => {
         <div className="flex justify-center mb-12">
           <div className="bg-gray-100 p-1 rounded-full flex items-center">
             <button
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${!isAnnual ? 'bg-white shadow-md text-blue-600' : 'text-gray-500'}`}
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${!isAnnual ? 'bg-white shadow-md text-[#1D9D73]' : 'text-gray-500'}`}
               onClick={() => setIsAnnual(false)}
             >
               Mensuel
             </button>
             <button
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${isAnnual ? 'bg-white shadow-md text-blue-600' : 'text-gray-500'}`}
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${isAnnual ? 'bg-white shadow-md text-[#1D9D73]' : 'text-gray-500'}`}
               onClick={() => setIsAnnual(true)}
             >
               Annuel
-              <span className="ml-1 text-xs py-0.5 px-2 bg-green-100 text-green-800 rounded-full">-16%</span>
+              <span className="ml-1 text-xs py-0.5 px-2 bg-[#1D9D73]/10 text-[#1D9D73] rounded-full">-16%</span>
             </button>
           </div>
         </div>
@@ -102,10 +102,10 @@ const PricingSection = () => {
           {plans.map((plan) => (
             <div 
               key={plan.id} 
-              className={`bg-white rounded-2xl shadow-lg border ${plan.popular ? 'border-blue-500' : 'border-gray-200'} overflow-hidden relative`}
+              className={`bg-white rounded-2xl shadow-lg border ${plan.popular ? 'border-[#1D9D73]' : 'border-gray-200'} overflow-hidden relative`}
             >
               {plan.popular && (
-                <div className="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                <div className="absolute top-0 right-0 bg-[#1D9D73] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
                   Populaire
                 </div>
               )}
@@ -134,10 +134,10 @@ const PricingSection = () => {
                 <button
                   style={{
                     background: plan.popular 
-                      ? 'linear-gradient(to right, #2563EB, #8B5CF6)'
+                      ? 'linear-gradient(to right, #1D9D73, #34D399)'
                       : 'white',
-                    color: plan.popular ? 'white' : '#2563EB',
-                    border: plan.popular ? 'none' : '1px solid #2563EB',
+                    color: plan.popular ? 'white' : '#1D9D73',
+                    border: plan.popular ? 'none' : '1px solid #1D9D73',
                   }}
                   className="w-full py-3 px-4 rounded-lg font-medium text-center transition-all hover:opacity-90"
                 >

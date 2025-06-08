@@ -9,17 +9,23 @@ module.exports = {
     extend: {
       colors: {
         // Couleur principale pour le texte
-        'adzly-black': '#000000',
+        'adzly-black': '#0F1A33', // Bleu marine foncé du logo
         
-        // Couleurs pour le dégradé CTA
-        'adzly-blue': '#2563EB',
-        'adzly-violet': '#8B5CF6',
+        // Couleurs du logo
+        'adzly-orange': '#F7941D', // Orange vif du logo
+        'adzly-green': '#1D9D73', // Vert émeraude du logo
+        
+        // Anciennes couleurs (gardées pour compatibilité)
+        'adzly-blue': '#F7941D', // Remplacé par l'orange
+        'adzly-violet': '#1D9D73', // Remplacé par le vert
       },
       backgroundImage: {
-        'gradient-cta': 'linear-gradient(to right, #2563EB, #8B5CF6)',
+        'gradient-cta': 'linear-gradient(to right, #1D9D73, #34D399)',
+        'gradient-green': 'linear-gradient(to right, #1D9D73, #34D399)',
+        'gradient-orange-accent': 'linear-gradient(to right, #F7941D, #FDBA74)',
       },
       boxShadow: {
-        'cta': '0 4px 14px 0 rgba(139, 92, 246, 0.39)',
+        'cta': '0 4px 14px 0 rgba(247, 148, 29, 0.39)',
       },
     },
   },

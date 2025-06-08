@@ -46,7 +46,7 @@ const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.jpeg"
             alt="Adzly Logo"
             width={140}
             height={40}
@@ -61,7 +61,7 @@ const Header = () => {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-black hover:text-adzly-blue transition-colors`}
+              className={`text-black hover:text-[#1D9D73] transition-colors`}
               onClick={(e) => {
                 if (item.href.startsWith('/#')) {
                   e.preventDefault();
@@ -85,12 +85,12 @@ const Header = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              background: 'linear-gradient(to right, #2563EB, #8B5CF6)',
+              background: 'linear-gradient(to right, #1D9D73, #34D399)',
               color: 'white',
               fontWeight: 'bold',
               padding: '0.5rem 1.25rem',
               borderRadius: '9999px',
-              boxShadow: isPulsing ? '0 0 15px rgba(139, 92, 246, 0.5)' : '0 0 5px rgba(139, 92, 246, 0.3)',
+              boxShadow: isPulsing ? '0 0 15px rgba(29, 157, 115, 0.5)' : '0 0 5px rgba(29, 157, 115, 0.3)',
               transition: 'all 0.8s ease',
               transform: isPulsing ? 'scale(1.02)' : 'scale(1)',
               position: 'relative',
@@ -111,7 +111,7 @@ const Header = () => {
           
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden relative p-2 text-black hover:text-adzly-blue"
+            className="md:hidden relative p-2 text-black hover:text-[#1D9D73]"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -132,7 +132,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-black hover:text-adzly-blue px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
+                className="text-black hover:text-[#1D9D73] px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors"
                 onClick={(e) => {
                   if (item.href.startsWith('/#')) {
                     e.preventDefault();

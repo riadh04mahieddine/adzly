@@ -202,14 +202,14 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24" id="testimonials">
+    <section className="py-16 md:py-24 bg-gray-50" id="testimonials">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="text-black">Ce que disent </span>
             <span 
               style={{
-                background: 'linear-gradient(to right, #2563EB, #8B5CF6)',
+                background: 'linear-gradient(to right, #1D9D73, #34D399)',
                 WebkitBackgroundClip: 'text',
                 backgroundClip: 'text',
                 color: 'transparent'
@@ -219,7 +219,7 @@ const TestimonialsSection = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez comment Adzly aide des entreprises de toutes tailles et de tous secteurs à optimiser leurs campagnes publicitaires.
+            Découvrez comment Adzly transforme la stratégie marketing de nos clients grâce à notre IA et notre contenu UGC.
           </p>
         </div>
 
@@ -228,7 +228,7 @@ const TestimonialsSection = () => {
           {['Tous', 'SaaS', 'Startup', 'PME', 'TPE', 'Services', 'E-commerce'].map((type) => (
             <button
               key={type}
-              className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-gray-200 text-gray-700 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-all"
+              className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-gray-200 text-gray-700 hover:bg-[#1D9D73]/10 hover:text-[#1D9D73] hover:border-[#1D9D73]/20 transition-all"
             >
               {type}
             </button>
@@ -262,7 +262,7 @@ const TestimonialsSection = () => {
               </div>
               <p className="text-gray-600 flex-grow">{testimonial.content}</p>
               <div className="mt-4 pt-4 border-t border-gray-100">
-                <span className="text-xs font-medium px-2 py-1 bg-gray-100 rounded-full text-gray-600">
+                <span className="text-xs font-medium px-2 py-1 bg-[#1D9D73]/10 rounded-full text-[#1D9D73]">
                   {testimonial.type}
                 </span>
               </div>
