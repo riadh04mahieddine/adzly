@@ -1,0 +1,215 @@
+'use client';
+
+import Image from 'next/image';
+import { 
+  ChartBarIcon, 
+  UserGroupIcon, 
+  ArrowPathIcon
+} from '@heroicons/react/24/outline';
+
+const WhyChooseSection = () => {
+  return (
+    <section className="py-16 md:py-24 bg-gray-50" id="why-choose">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="text-black">On a tous une bonne raison de choisir </span>
+            <span 
+              style={{
+                background: 'linear-gradient(to right, #2563EB, #8B5CF6)',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                color: 'transparent'
+              }}
+            >
+              Adzly
+            </span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Découvrez comment notre plateforme transforme votre approche marketing à l'ère du digital
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-12 gap-6">
+          {/* Carte 1 - Plateformes publicitaires adaptées */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-5 bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Plateformes publicitaires adaptées à votre projet</h3>
+              <p className="text-gray-600 mb-4">
+                Nous choisissons pour vous les plateformes publicitaires les plus adaptées à votre secteur, votre audience et vos objectifs.
+              </p>
+              <div className="flex flex-wrap items-center gap-3 mt-4 relative">
+                {/* Logos des plateformes disposés de façon désordonnée */}
+                <div className="w-10 h-10 bg-white rounded-full shadow-sm flex items-center justify-center transform -rotate-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4285F4" className="w-6 h-6">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+                  </svg>
+                </div>
+                <div className="w-12 h-12 bg-white rounded-full shadow-sm flex items-center justify-center transform rotate-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2" className="w-8 h-8">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                </div>
+                <div className="w-9 h-9 bg-white rounded-full shadow-sm flex items-center justify-center transform -rotate-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#000000" className="w-5 h-5">
+                    <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                  </svg>
+                </div>
+                <div className="w-11 h-11 bg-white rounded-full shadow-sm flex items-center justify-center transform rotate-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF0000" className="w-7 h-7">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                  </svg>
+                </div>
+                <div className="w-10 h-10 bg-white rounded-full shadow-sm flex items-center justify-center transform -rotate-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#0A66C2" className="w-6 h-6">
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Carte 2 - Budget optimisé */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow">
+            <div className="flex items-center mb-4">
+              <div className="bg-green-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-green-600">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold">Budget calculé et optimisé</h3>
+            </div>
+            <p className="text-gray-600 ml-16">
+              Nous définissons précisément le budget nécessaire en fonction de vos objectifs, votre marché et votre audience cible pour maximiser votre retour sur investissement.
+            </p>
+            <div className="ml-16 mt-3 flex items-center gap-2">
+              <div className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Précis</div>
+              <div className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Adapté</div>
+              <div className="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Optimisé</div>
+            </div>
+          </div>
+          
+          {/* Carte 3 - Mise en contact avec des influenceurs */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-3 bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow">
+            <div className="flex items-center mb-4">
+              <div className="bg-indigo-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-indigo-600">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold">Réseau d'influenceurs</h3>
+            </div>
+            <p className="text-gray-600 ml-16 mb-4">
+              Nous vous mettons en contact avec des micro-influenceurs pertinents pour votre marché, créant ainsi une communauté authentique autour de votre produit.
+            </p>
+            <div className="flex -space-x-2 ml-16">
+              <div className="w-8 h-8 rounded-full bg-blue-100 border-2 border-white overflow-hidden">
+                <div className="bg-gradient-to-br from-purple-400 to-indigo-500 w-full h-full"></div>
+              </div>
+              <div className="w-8 h-8 rounded-full bg-pink-100 border-2 border-white overflow-hidden">
+                <div className="bg-gradient-to-br from-red-300 to-pink-500 w-full h-full"></div>
+              </div>
+              <div className="w-8 h-8 rounded-full bg-yellow-100 border-2 border-white overflow-hidden">
+                <div className="bg-gradient-to-br from-yellow-300 to-orange-500 w-full h-full"></div>
+              </div>
+              <div className="w-8 h-8 rounded-full bg-green-100 border-2 border-white overflow-hidden">
+                <div className="bg-gradient-to-br from-green-300 to-teal-500 w-full h-full"></div>
+              </div>
+              <div className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs font-medium text-gray-500">+12</div>
+            </div>
+          </div>
+          
+          {/* Carte 4 - Vidéos UGC */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow">
+            <div className="flex items-center mb-4">
+              <div className="bg-red-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-red-600">
+                  <path strokeLinecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold">Vidéos UGC</h3>
+            </div>
+            <p className="text-gray-600 ml-16 mb-3">
+              Nous vous aidons à créer et à exploiter du contenu généré par les utilisateurs pour renforcer l'authenticité de votre marque et augmenter l'engagement.
+            </p>
+            <div className="ml-16 flex space-x-2">
+              <div className="w-16 h-10 bg-gray-200 rounded-md flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-gray-500">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                </svg>
+              </div>
+              <div className="w-16 h-10 bg-gray-200 rounded-md flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-gray-500">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                </svg>
+              </div>
+              <div className="w-16 h-10 bg-gray-200 rounded-md flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-gray-500">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Carte 5 - Plan marketing complet */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-5 bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow">
+            <div className="flex items-center mb-4">
+              <div className="bg-blue-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-blue-600">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold">Plan marketing complet</h3>
+            </div>
+            <p className="text-gray-600 ml-16 mb-3">
+              Nous élaborons une stratégie marketing holistique qui combine tous les leviers de croissance adaptés à votre entreprise, votre secteur et vos objectifs.
+            </p>
+            <div className="ml-16 grid grid-cols-3 gap-2">
+              <div className="bg-blue-50 p-2 rounded text-xs text-center text-blue-700">Analyse</div>
+              <div className="bg-indigo-50 p-2 rounded text-xs text-center text-indigo-700">Stratégie</div>
+              <div className="bg-purple-50 p-2 rounded text-xs text-center text-purple-700">Contenu</div>
+              <div className="bg-pink-50 p-2 rounded text-xs text-center text-pink-700">Publicité</div>
+              <div className="bg-red-50 p-2 rounded text-xs text-center text-red-700">Influence</div>
+              <div className="bg-amber-50 p-2 rounded text-xs text-center text-amber-700">Mesure</div>
+            </div>
+          </div>
+          
+          {/* Carte 6 - Analyse des tendances */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-7 bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow">
+            <div className="flex items-center mb-4">
+              <div className="bg-purple-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-purple-600">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold">Analyse des tendances</h3>
+            </div>
+            <p className="text-gray-600 ml-16 mb-4">
+              Notre IA analyse en permanence les tendances du marché pour vous aider à anticiper les évolutions et à adapter votre stratégie marketing en conséquence.
+            </p>
+            <div className="ml-16 relative h-12">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-200 via-blue-200 to-green-200 rounded-lg"></div>
+              <div className="absolute h-full w-1/3 border-r border-dashed border-gray-400 flex items-center">
+                <div className="w-3 h-3 bg-purple-500 rounded-full absolute -right-1.5"></div>
+                <span className="absolute -bottom-6 right-0 text-xs font-medium">Hier</span>
+              </div>
+              <div className="absolute h-full w-2/3 border-r border-dashed border-gray-400 flex items-center">
+                <div className="w-3 h-3 bg-blue-500 rounded-full absolute -right-1.5"></div>
+                <span className="absolute -bottom-6 right-0 text-xs font-medium">Aujourd'hui</span>
+              </div>
+              <div className="absolute h-full w-full flex items-center">
+                <div className="w-3 h-3 bg-green-500 rounded-full absolute right-0"></div>
+                <span className="absolute -bottom-6 right-0 text-xs font-medium">Demain</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyChooseSection;
