@@ -3,9 +3,11 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { Bars3Icon, XMarkIcon, SparklesIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
+  { name: 'Solution', href: '/solution' },
   { name: 'Fonctionnalités', href: '/#features' },
   { name: 'Comment ça marche', href: '/#how-it-works' },
   { name: 'Tarifs', href: '/#pricing' },
@@ -16,6 +18,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isPulsing, setIsPulsing] = useState(true);
+  const router = useRouter();
 
   // Handle scroll effect
   useEffect(() => {
@@ -81,6 +84,7 @@ const Header = () => {
         <div className="flex items-center gap-3">
           {/* CTA Button avec animation douce */}
           <button
+            onClick={() => router.push('/dashboard')}
             style={{
               display: 'flex',
               alignItems: 'center',

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { ArrowRightIcon, SparklesIcon, LightBulbIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -23,9 +24,11 @@ const HeroSection = () => {
     triggerOnce: true,
     threshold: 0.1
   });
+  const router = useRouter();
   
   const handleSubmit = () => {
     console.log('Stratégie demandée');
+    router.push('/dashboard');
   };
   
   // Animations
