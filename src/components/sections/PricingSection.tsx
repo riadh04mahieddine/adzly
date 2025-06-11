@@ -30,16 +30,16 @@ const PricingSection = () => {
       id: 'solo',
       name: 'Solo',
       description: 'Parfait pour les entrepreneurs individuels et les petites entreprises.',
-      monthlyPrice: 29.99,
-      annualPrice: 299.90, // ~10 mois au lieu de 12 (2 mois offerts)
+      monthlyPrice: 49.99,
+      annualPrice: 499.90, // ~10 mois au lieu de 12 (2 mois offerts)
       features: [
-        'Jusqu\'à 5 campagnes actives',
-        'Accès à 3 plateformes publicitaires',
+        '3 campagnes publicitaires payantes par jour',
+        'Accès à la création de contenu',
+        'Accès aux vidéos UGC',
         'Suggestions de contenu organique',
         'Analyse de tendances basique',
         'Rapports de performance hebdomadaires',
-        'Assistance par email',
-        'Optimisation automatique basique'
+        'Assistance par email'
       ],
       cta: 'Commencer avec Solo',
       popular: false
@@ -48,19 +48,19 @@ const PricingSection = () => {
       id: 'growth',
       name: 'Croissance',
       description: 'Idéal pour les entreprises en pleine expansion et les équipes marketing.',
-      monthlyPrice: 59.99,
-      annualPrice: 599.90, // ~10 mois au lieu de 12 (2 mois offerts)
+      monthlyPrice: 99.99,
+      annualPrice: 999.90, // ~10 mois au lieu de 12 (2 mois offerts)
       features: [
-        'Jusqu\'à 20 campagnes actives',
-        'Accès à toutes les plateformes publicitaires',
-        'Stratégie de contenu avancée',
+        '5 campagnes publicitaires payantes par jour',
+        'Accès à la création de contenu',
+        'Accès aux vidéos UGC',
+        'Accès à l\'agent IA',
+        'Accès aux scrappers',
         'Analyse de tendances approfondie',
-        'Suggestions de micro-influenceurs',
         'Rapports de performance quotidiens',
         'Assistance prioritaire 24/7',
         'Optimisation automatique avancée',
-        'Analyses concurrentielles',
-        'Intégration CRM'
+        'Analyses concurrentielles'
       ],
       cta: 'Commencer avec Croissance',
       popular: true
